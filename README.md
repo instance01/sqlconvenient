@@ -15,5 +15,4 @@ var query = "select * from testtable"
 return sqlconvenient.SqlQuery(db, &e, query)
 ```
 
-See a more in depth example in \_example/.
-
+See a more in depth example in \_example/ and documentation [over here](https://godoc.org/github.com/instance01/sqlconvenient).
