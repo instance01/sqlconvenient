@@ -59,7 +59,7 @@ B E W A R E
 This uses reflect, thus is inefficient and purely for convenience.
 */
 func SqlQuery(db *sql.DB, rettype interface{}, query string, params ...interface{}) []interface{} {
-	var ret []interface{}
+	ret := make([]interface{}, 0)
 
 	stmt, _ := db.Prepare(query)
 	defer stmt.Close()
